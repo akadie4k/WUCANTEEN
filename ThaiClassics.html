@@ -15,7 +15,7 @@
             <h1 class="text-2xl font-bold text-gray-800">WU Canteen</h1>
             <nav class="hidden md:block">
                 <ul class="flex space-x-4">
-                    <li><a href="#" class="text-gray-600 hover:text-gray-800"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="index.html" class="text-gray-600 hover:text-gray-800"><i class="fas fa-home"></i> Home</a></li>
                     <button id="open-drawer-desktop" class="open-drawer-btn text-gray-600 hover:text-gray-800 focus:outline-none flex
 
 items-center gap-2" aria-haspopup="true" aria-controls="drawer" aria-expanded="false">
@@ -92,37 +92,57 @@ items-center gap-2" aria-haspopup="true" aria-controls="drawer" aria-expanded="f
             </nav>
         </aside>
     </header>
-    <main class="container mx-auto px-4 py-8 max-w-3xl flex-1">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4">Welcome to WU Canteen</h2>
-        <p class="text-gray-600 mb-4">
-            Enjoy a variety of delicious Thai dishes and beverages in a cozy atmosphere.
-        </p>
-        <p class="text-gray-600">
-            Browse our menu to find your favorite items or try something new!
-        </p>
-    </main>
+    <main class="container mx-auto px-4 py-8 max-w-3xl">
+        <nav aria-label="Breadcrumb" class="mb-6">
+            <ol class="flex items-center flex-wrap text-sm text-gray-500">
+                <li class="flex items-center">
+                    <a href="index.html" class="hover:text-gray-800 hover:underline">
+                        <i class="fas fa-house mr-1"></i>Home
+                    </a>
+                    <i class="fas fa-chevron-right mx-2 text-xs text-gray-400"></i>
+                </li>
+                <li class="flex items-center">
+                    <a href="Menu.html" class="hover:text-gray-800 hover:underline">Menu</a>
+                    <i class="fas fa-chevron-right mx-2 text-xs text-gray-400"></i>
+                </li>
+                <li aria-current="page" class="font-medium text-gray-800 truncate">
+                    <a href="ThaiClassics.html" class="hover:text-gray-800 hover:underline">Thai Classics</a>
+                    <i class="fas fa-chevron-right mx-2 text-xs text-gray-400"></i>
+                </li>
+            </ol>
+        </nav>
+        <div class="bg-white rounded-lg shadow p-6">
+            <h1 class="text-2xl font-bold text-gray-800">Thai Classics</h1>
+            <div class="text-gray-600 mt-4 space-y-4">
+                <p>
+                    Welcome to Thai Classics — a curated selection of Thailand's most beloved dishes, prepared with
+                    authentic
+                    spices, fresh herbs, and traditional techniques. Whether you prefer mild and aromatic or bold and
+                    spicy,
+                    there's something here to satisfy every palate.
+                </p>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><span class="font-medium">Pad Thai</span> — Stir-fried rice noodles with tamarind, tofu, egg,
+                        and peanuts.</li>
+                    <li><span class="font-medium">Green Curry (Gaeng Keow Wan)</span> — Creamy green curry with coconut
+                        milk and
 
-    <footer class="bg-indigo-800 border-t mt-auto">
-        <div class="container mx-auto px-4 py-6">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                <div class="text-sm text-white text-center md:text-left">
-                    &copy; 2026 WU Canteen. All rights reserved.
-                </div>
-                
-                <div class="flex space-x-4 text-white">
-                    <a href="#" class="hover:text-gray-800 transition-colors" aria-label="Facebook">
-                        <i class="fab fa-facebook text-lg"></i>
-                    </a>
-                    <a href="#" class="hover:text-gray-800 transition-colors" aria-label="Instagram">
-                        <i class="fab fa-instagram text-lg"></i>
-                    </a>
-                    <a href="#" class="hover:text-gray-800 transition-colors" aria-label="Line">
-                        <i class="fab fa-line text-lg"></i>
-                    </a>
-                </div>
+                        basil.</li>
+
+                    <li><span class="font-medium">Tom Yum Soup</span> — Spicy and sour soup with lemongrass, lime, and
+                        shrimp.</li>
+                    <li><span class="font-medium">Massaman Curry</span> — Mild, slightly sweet curry with potatoes and
+                        peanuts.</li>
+                    <li><span class="font-medium">Pad Kra Pao</span> — Stir-fried holy basil with your choice of protein
+                        and chili.</li>
+                </ul>
+                <p class="text-sm text-gray-500">All dishes can be customized for spice level and dietary preferences.
+                    Ask our staff for
+
+                    recommendations.</p>
             </div>
         </div>
-    </footer>
+    </main>
 
     <script>
         const menuButton = document.getElementById("mobile-menu-button");
