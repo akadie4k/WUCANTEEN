@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WU Canteen</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
@@ -15,7 +16,8 @@
             <h1 class="text-2xl font-bold text-gray-800">WU Canteen</h1>
             <nav class="hidden md:block">
                 <ul class="flex space-x-4">
-                    <li><a href="index.html" class="text-gray-600 hover:text-gray-800"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="index.html" class="text-gray-600 hover:text-gray-800"><i class="fas fa-home"></i>
+                            Home</a></li>
                     <button id="open-drawer-desktop" class="open-drawer-btn text-gray-600 hover:text-gray-800 focus:outline-none flex
 
 items-center gap-2" aria-haspopup="true" aria-controls="drawer" aria-expanded="false">
@@ -92,6 +94,7 @@ items-center gap-2" aria-haspopup="true" aria-controls="drawer" aria-expanded="f
             </nav>
         </aside>
     </header>
+
     <main class="container mx-auto px-4 py-8 max-w-3xl">
         <nav aria-label="Breadcrumb" class="mb-6">
             <ol class="flex items-center flex-wrap text-sm text-gray-500">
@@ -102,47 +105,305 @@ items-center gap-2" aria-haspopup="true" aria-controls="drawer" aria-expanded="f
                     <i class="fas fa-chevron-right mx-2 text-xs text-gray-400"></i>
                 </li>
                 <li class="flex items-center">
-                    <a href="Menu.html" class="hover:text-gray-800 hover:underline">Menu</a>
+                    <a href="Menu.html" class="hover:text-gray-800 hover:underline">
+                        Menu
+                    </a>
                     <i class="fas fa-chevron-right mx-2 text-xs text-gray-400"></i>
                 </li>
-                <li aria-current="page" class="font-medium text-gray-800 truncate">
-                    <a href="ThaiClassics.html" class="hover:text-gray-800 hover:underline">Thai Classics</a>
-                    <i class="fas fa-chevron-right mx-2 text-xs text-gray-400"></i>
+                <li class="flex items-center">
+                    <a href="ThaiClassics.html" class="hover:text-gray-800 hover:underline">
+                        Thai Classics
+                    </a>
                 </li>
             </ol>
         </nav>
-        <div class="bg-white rounded-lg shadow p-6">
-            <h1 class="text-2xl font-bold text-gray-800">Thai Classics</h1>
-            <div class="text-gray-600 mt-4 space-y-4">
-                <p>
-                    Welcome to Thai Classics — a curated selection of Thailand's most beloved dishes, prepared with
-                    authentic
-                    spices, fresh herbs, and traditional techniques. Whether you prefer mild and aromatic or bold and
-                    spicy,
-                    there's something here to satisfy every palate.
-                </p>
-                <ul class="list-disc list-inside space-y-2">
-                    <li><span class="font-medium">Pad Thai</span> — Stir-fried rice noodles with tamarind, tofu, egg,
-                        and peanuts.</li>
-                    <li><span class="font-medium">Green Curry (Gaeng Keow Wan)</span> — Creamy green curry with coconut
-                        milk and
 
-                        basil.</li>
+        <section class="bg-white rounded-lg shadow p-6">
+            <h1 class="text-2xl font-bold text-gray-800 mb-2">
+                Thai Classics
+            </h1>
+            <p class="text-gray-600 mb-8">
+                Our most-loved dishes, made fresh every day.
+            </p>
 
-                    <li><span class="font-medium">Tom Yum Soup</span> — Spicy and sour soup with lemongrass, lime, and
-                        shrimp.</li>
-                    <li><span class="font-medium">Massaman Curry</span> — Mild, slightly sweet curry with potatoes and
-                        peanuts.</li>
-                    <li><span class="font-medium">Pad Kra Pao</span> — Stir-fried holy basil with your choice of protein
-                        and chili.</li>
-                </ul>
-                <p class="text-sm text-gray-500">All dishes can be customized for spice level and dietary preferences.
-                    Ask our staff for
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
-                    recommendations.</p>
+                <!-- Card -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+
+                    <img src="images/pad-kra-pao-kai.jpg" alt="Pad Kra Pao Kai" class="w-full h-44 object-cover">
+
+                    <div class="p-4">
+
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-semibold text-lg text-gray-800">
+                                Pad Kra Pao Kai
+                            </h3>
+
+                            <span class="font-bold text-orange-600">
+                                ฿55
+                            </span>
+                        </div>
+
+
+
+                        <!-- Badges -->
+                        <div class="flex flex-wrap gap-2 mt-3">
+                            <span class="bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full">
+                                🌶️ Spicy
+                            </span>
+
+                            <span class="bg-yellow-100 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full">
+                                🍳 Egg
+                            </span>
+                        </div>
+
+                        <p class="text-sm text-gray-600 mt-4">
+                            Stir-fried minced chicken with holy basil, served with
+                            jasmine rice and a crispy fried egg.
+                        </p>
+
+                        <ul class="list-disc list-inside text-sm text-gray-500 mt-3 space-y-1">
+                            <li>Minced chicken</li>
+                            <li>Holy basil</li>
+                            <li>chili & garlic</li>
+                        </ul>
+
+                        <div class="flex items-center gap-3 mt-5 pt-4 border-t-2 border-gray-400">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-orange-500 text-white text-xs font-semibold">
+                                IH
+                            </span>
+
+                            <span class="text-sm text-gray-500">
+                                Recommended by Chef Ilham
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Card -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+
+                    <img src="images/vegetable-fried-rice.jpg" alt="vegetable-fried-rice" class="w-full h-44 object-cover">
+
+                    <div class="p-4">
+
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-semibold text-lg text-gray-800">
+                                Vegetable Fried Rice
+                            </h3>
+
+                            <span class="font-bold text-orange-600">
+                                ฿49
+                            </span>
+                        </div>
+
+
+
+                        <!-- Badges -->
+                        <div class="flex flex-wrap gap-2 mt-3">
+                            <span class="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">
+                                Not Spicy
+                            </span>
+
+                            <span class="bg-yellow-100 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full">
+                                🍳 Egg
+                            </span>
+                        </div>
+
+                        <p class="text-sm text-gray-600 mt-4">
+                           Stir-fried vegetables with tofu, served with rice and a fried egg.
+                        </p>
+
+                        <ul class="list-disc list-inside text-sm text-gray-500 mt-3 space-y-1">
+                            <li>Vegetables</li>
+                            <li>Tofu</li>
+                            <li>Carrots & garlic</li>
+                        </ul>
+
+                        <div class="flex items-center gap-3 mt-5 pt-4 border-t-2 border-gray-400">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-500 text-white text-xs font-semibold">
+                                JP
+                            </span>
+
+                            <span class="text-sm text-gray-500">
+                                Recommended by Chef Jutaporn
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                 <!-- Card -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+
+                    <img src="images/green-curry-chicken.jpg" alt="green-curry-chicken" class="w-full h-44 object-cover">
+
+                    <div class="p-4">
+
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-semibold text-lg text-gray-800">
+                                Green Curry Chicken
+                            </h3>
+
+                            <span class="font-bold text-orange-600">
+                                ฿60
+                            </span>
+                        </div>
+
+
+
+                        <!-- Badges -->
+                        <div class="flex flex-wrap gap-2 mt-3">
+                            <span class="bg-red-100 text-red-700 text-xs font-semibold px-3 py-1 rounded-full">
+                                🌶️ Spicy
+                            </span>
+
+                            <span class="bg-yellow-100 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full">
+                                Milk
+                            </span>
+                        </div>
+
+                        <p class="text-sm text-gray-600 mt-4">
+                            Coconut curry with chicken, Thai eggplant, and sweet basil.
+                        </p>
+
+                        <ul class="list-disc list-inside text-sm text-gray-500 mt-3 space-y-1">
+                            <li>Chicken</li>
+                            <li>Coconut milk</li>
+                            <li>Thai eggplant</li>
+                        </ul>
+
+                        <div class="flex items-center gap-3 mt-5 pt-4 border-t-2 border-gray-400">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-green-500 text-white text-xs font-semibold">
+                                PR
+                            </span>
+
+                            <span class="text-sm text-gray-500">
+                                Recommended by Chef Pawarit
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+
+
+
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Nutrition at a Glance</h3>
+                <div class="bg-white rounded-lg shadow overflow-x-auto">
+                    <table class="w-full text-sm text-left">
+                        <thead class="bg-gray-50 text-gray-500 uppercase text-xs">
+                            <tr>
+                                <th class="px-4 py-3">Dish</th>
+                                <th class="px-4 py-3">Calories</th>
+                                <th class="px-4 py-3">Allergens</th>
+                                <th class="px-4 py-3">Spice Level</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="divide-y divide-gray-100 text-gray-700">
+                            <tr>
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center gap-3">
+                                        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-orange-100 text-orange-600
+
+shrink-0">
+
+                                            <i class="fas fa-utensils text-xs"></i>
+                                        </span>
+                                        <span class="font-medium">Pad Kra Pao Kai</span>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">620 kcal</td>
+                                <td class="px-4 py-3">Egg</td>
+                                <td class="px-4 py-3">
+                                    <span class="text-xs font-medium px-2 py-0.5 rounded-full bg-red-100 text-red-700">
+                                        🌶️</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center gap-3">
+                                        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600
+
+shrink-0">
+
+                                            <i class="fas fa-utensils text-xs"></i>
+                                        </span>
+                                        <span class="font-medium">Vegetables</span>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">210 kcal</td>
+                                <td class="px-4 py-3">Eggs</td>
+                                <td class="px-4 py-3">
+                                    <span class="text-xs font-medium px-2 py-0.5 rounded-full bg-green-100 text-green-700">
+                                        Not Spicy</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center gap-3">
+                                        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600
+
+shrink-0">
+
+                                            <i class="fas fa-utensils text-xs"></i>
+                                        </span>
+                                        <span class="font-medium">Green Curry Chicken</span>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">480 kcal</td>
+                                <td class="px-4 py-3">Milk (coconut)</td>
+                                <td class="px-4 py-3">
+                                    <span class="text-xs font-medium px-2 py-0.5 rounded-full bg-red-100 text-red-700">
+                                        🌶️</span>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+
+    <footer class="bg-indigo-800 border-t mt-auto">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-sm text-white text-center md:text-left">
+                    &copy; 2026 WU Canteen. All rights reserved.
+                </div>
+
+                <div class="flex space-x-4 text-white">
+                    <a href="#" class="hover:text-gray-800 transition-colors" aria-label="Facebook">
+                        <i class="fab fa-facebook text-lg"></i>
+                    </a>
+                    <a href="#" class="hover:text-gray-800 transition-colors" aria-label="Instagram">
+                        <i class="fab fa-instagram text-lg"></i>
+                    </a>
+                    <a href="#" class="hover:text-gray-800 transition-colors" aria-label="Line">
+                        <i class="fab fa-line text-lg"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    </main>
+    </footer>
 
     <script>
         const menuButton = document.getElementById("mobile-menu-button");

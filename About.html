@@ -16,15 +16,15 @@
             <h1 class="text-2xl font-bold text-gray-800">WU Canteen</h1>
             <nav class="hidden md:block">
                 <ul class="flex space-x-4">
-                    <li><a href="#" class="text-gray-600 hover:text-gray-800"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="index.html" class="text-gray-600 hover:text-gray-800"><i class="fas fa-home"></i> Home</a></li>
                     <button id="open-drawer-desktop" class="open-drawer-btn text-gray-600 hover:text-gray-800 focus:outline-none flex
 
 items-center gap-2" aria-haspopup="true" aria-controls="drawer" aria-expanded="false">
                         <i class="fas fa-bars"></i><span class="font-medium">Menu</span>
                     </button>
-                    <li><a href="About.html" class="text-gray-600 hover:text-gray-800"><i class="fas fa-info-circle"></i>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-800"><i class="fas fa-info-circle"></i>
                             About</a></li>
-                    <li><a href="Contact.html" class="text-gray-600 hover:text-gray-800"><i class="fas fa-envelope"></i>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-800"><i class="fas fa-envelope"></i>
                             Contact</a></li>
                 </ul>
             </nav>
@@ -95,71 +95,73 @@ items-center gap-2" aria-haspopup="true" aria-controls="drawer" aria-expanded="f
     </header>
 
     <main class="container mx-auto px-4 py-12 max-w-5xl flex-1">
-        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <div>
-                <h2 class="text-3xl font-bold text-gray-800 mb-3">Welcome to WU Canteen</h2>
-                <p class="text-gray-600 max-w-md">
-                    Enjoy a variety of delicious Thai dishes and beverages in a cozy atmosphere.
-                    Browse our menu to find your favorite items or try something new!
-                </p>
-            </div>
-            <a href="Menu.html" class="shrink-0 inline-flex items-center justify-center gap-2 bg-gray-600 text-white font-semibold px-6 py-3 rounded-lg
-
-shadow hover:bg-gray-700 transition-colors duration-300">
-                <i class="fas fa-bowl-food"></i> Explore Menu
-            </a>
-        </div>
-
-        <hr class="my-10 border-gray-200">
-
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div class="flex items-start gap-4 bg-white rounded-lg shadow p-5">
-                <i class="fas fa-leaf text-2xl text-green-600"></i>
-                <div>
-                    <h3 class="font-semibold text-green-800">Fresh Thai Classics</h3>
-                    <p class="text-sm text-green-500 mt-1">Made daily with local ingredients.</p>
-                </div>
-            </div>
-            <div class="flex items-start gap-4 bg-white rounded-lg shadow p-5">
-                <i class="fas fa-clock text-2xl text-blue-600"></i>
-                <div>
-                    <h3 class="font-semibold text-blue-800">Quick Service</h3>
-                    <p class="text-sm text-blue-500 mt-1">Order and get your food in minutes.</p>
-                </div>
-            </div>
-            <div class="flex items-start gap-4 bg-white rounded-lg shadow p-5">
-                <i class="fas fa-tag text-2xl text-orange-500"></i>
-                <div>
-                    <h3 class="font-semibold text-orange-800">Student-Friendly Prices</h3>
-                    <p class="text-sm text-orange-500 mt-1">Great meals that fit your budget.</p>
-                </div>
-            </div>
-        </div>
-
-        <hr class="my-10 border-gray-200">
-
-        <div class="bg-white rounded-lg shadow p-6">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">Featured Shops</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
-                <div
-                    class="bg-gray-50 rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow duration-300">
-                    <div class="p-4">
-                        <h3 class="font-semibold text-gray-800">Ro-Bi-Da Kitchen (Halal)</h3>
-                        <p class="text-sm text-gray-600 mt-1">A popular spot for authentic Thai classics, known for
-                            their Pad Thai and Tom
-
-                            Yum soup.</p>
-
+        <div class="container mx-auto px-4 py-10 max-w-5xl">
+            <h2 class="text-3xl font-bold text-gray-800 mb-2">About WU Canteen</h2>
+            <p class="text-gray-600 mb-8">
+                WU Canteen serves the Walailak University community with fresh, affordable meals every day.
+                Find our location, hours, and everything else you need to know below.
+            </p>
+            <div id="about-accordion" class="bg-white rounded-lg shadow divide-y divide-gray-100">
+                <details open>
+                    <summary
+                        class="flex items-center justify-between gap-3 px-5 py-4 cursor-pointer font-semibold text-gray-800">
+                        <span><i class="fa-solid fa-location-dot text-orange-500 w-5"></i> Address</span>
+                        <i class="fa-solid fa-chevron-down accordion-chevron text-gray-400 text-sm"></i>
+                    </summary>
+                    <div class="px-5 pb-5 text-sm text-gray-600 space-y-1">
+                        <p class="font-medium text-gray-800">WU Canteen</p>
+                        <p>Walailak University</p>
+                        <p>222 Thaiburi, Tha Sala District, Nakhon Si Thammarat 80160, Thailand</p>
+                        <p class="pt-1">
+                            <i class="fa-solid fa-phone text-gray-400 w-4"></i> +66 (0)75 xxx xxx
+                        </p>
                     </div>
-                </div>
-                <div
-                    class="bg-gray-50 rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow duration-300">
-                    <div class="p-4">
-                        <h3 class="font-semibold text-gray-800">Tom Yum O-Cha Noodle</h3>
-                        <p class="text-sm text-gray-600 mt-1">Known for their delicious Tom Yum soup and fresh noodle
-                            dishes.</p>
+                </details>
+
+                <details>
+                    <summary
+                        class="flex items-center justify-between gap-3 px-5 py-4 cursor-pointer font-semibold text-gray-800">
+                        <span><i class="fa-solid fa-map-location-dot text-orange-500 w-5"></i> Map</span>
+                        <i class="fa-solid fa-chevron-down accordion-chevron text-gray-400 text-sm"></i>
+                    </summary>
+                    <div class="px-5 pb-5">
+                        <iframe title="Map showing Walailak University"
+                            src="https://www.google.com/maps?q=Walailak+University,+Nakhon+Si+Thammarat,+Thailand&output=embed"
+                            class="w-full h-64 rounded-md border-0" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
-                </div>
+                </details>
+
+                <details>
+                    <summary
+                        class="flex items-center justify-between gap-3 px-5 py-4 cursor-pointer font-semibold text-gray-800">
+                        <span><i class="fa-solid fa-circle-info text-orange-500 w-5"></i> Special Information</span>
+                        <i class="fa-solid fa-chevron-down accordion-chevron text-gray-400 text-sm"></i>
+                    </summary>
+                    <div class="px-5 pb-5 text-sm text-gray-600">
+                        <ul class="space-y-2">
+                            <li><i class="fa-solid fa-clock text-gray-400 w-4"></i> Mon–Fri: 07:00–19:00 &nbsp;|&nbsp;
+                                Sat–Sun: 08:00–
+
+                                15:00</li>
+
+                            <li><i class="fa-solid fa-wallet text-gray-400 w-4"></i> Cash, PromptPay QR, and campus card
+                                accepted</li>
+                            <li><i class="fa-solid fa-check-circle text-gray-400 w-4"></i> Halal-certified stalls
+                                available — look for the
+
+                                badge on the menu pages</li>
+
+                            <li><i class="fa-solid fa-leaf text-gray-400 w-4"></i> Bring your own container for a small
+                                discount</li>
+                            <li><i class="fa-solid fa-triangle-exclamation text-gray-400 w-4"></i> Allergen information
+                                available on
+
+                                request at each stall</li>
+                        </ul>
+                    </div>
+                </details>
             </div>
         </div>
     </main>
